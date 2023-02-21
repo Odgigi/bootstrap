@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gouttières</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <h2 class="display-6 mb-3">Gouttières horizontales</h2>
+    <!--gx-1 jusqu'à 5 ajoute du padding à gauche et à droite de notre élément-->
+    <!--gy-1 jusqu'à 5 ajoute de la marge en haut et en bas de ntre élément-->
+    <div class="row mb-5 gx-3">
+        <div class="col">
+            <p class="p-3 bg-warning border">Les gouttières</p>
+        </div>
+        <div class="col">
+            <p class="p-3 bg-warning border">Les gouttières</p>
+        </div>
+    </div>
+
+    <div class="row mb-5 gy-lg-5">
+        <div class="col">
+            <p class="p-3 bg-warning border">Les gouttières</p>
+        </div>
+        <div class="col gy-3">
+            <p class="p-3 bg-warning border">Les gouttières</p>
+        </div>
+    </div>
+
+    <h2 class="display-6 mb-3 mx-5">Les margins</h2>
+    <!--ms = margin-start | me = margin-end | -->
+    <div class="row bg-dark justify-content-start p-3">
+        
+            
+        <div class="col-6 m-auto">
+            <p class="w-100 bg-light p-2 border border-dark">
+                Col
+            </p>
+        </div>
+        <div class="col-6 m-auto">
+            <p class="w-100 bg-light p-2 border border-dark">
+                Col
+            </p>
+        </div>
+    </div>
+
+    <!--------------------------------------les Flexbox------------------------------------------>
+    
+    <h2 class="display-6 mb-5 ms-5">le align-item</h2>
+    <div class="container">
+        <div class="d-flex align-items-start bg-dark p-3 mb-5" style="height:400px">
+            <p class="text-dark bg-light m-1 p-1 align-self-center" style="width: 250px; height: 100px">Hello World !</p>
+            <p class="text-dark bg-light m-1 p-1" style="width: 250px; height: 100px">Hello World !</p>
+            <p class="text-dark bg-light m-1 p-1 align-self-end" style="width: 250px; height: 100px">Hello World !</p>
+            <p class="text-dark bg-light m-1 p-1" style="width: 250px; height: 100px">Hello World !</p>
+        </div>
+    </div>
+
+    <h2 class="display-6 mb-5 ms-5">le justify-content</h2>
+    <div class="container">
+        <div class="d-flex justify-content-around bg-dark p-3 mb-5" style="height:400px">
+            <p class="text-dark bg-light m-1 p-1" style="width: 250px; height: 100px">Hello World !</p>
+            <p class="text-dark bg-light m-1 p-1" style="width: 250px; height: 100px">Hello World !</p>
+            <p class="text-dark bg-light m-1 p-1" style="width: 250px; height: 100px">Hello World !</p>
+        </div>
+    </div>
+
+</body>
+</html>

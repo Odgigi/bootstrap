@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grilles</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <!--pas de container pour cette page-->
+
+    <h2 class="display-6 mb-3 text-center">Le container</h2>
+
+    <div class="bg-dark p-5 mb-5">
+        <h3 class="text-light text-center">Le container sert à centrer le contenu</h3>
+    </div>
+
+    <h2 class="display-6 mb-3 text-center">Le container fluide</h2>
+    
+
+    <div class="bg-dark p-5 mb-5">
+        <h3 class="text-light text-center">Le container fluide prend toujours 100% de la largeur</h3>
+    </div>
+
+    <h2 class="display-6 mb-3 text-center">Des containers réactifs</h2>
+    <div class="container-sm p-3 mx-auto mt-1 text-light bg-success">100% jusqu'à sm</div>
+    <div class="container-md p-3 mx-auto mt-1 text-light bg-success">100% jusqu'à md</div>
+    <div class="container-lg p-3 mx-auto mt-1 text-light bg-success">100% jusqu'à lg</div>
+    <div class="container-xl p-3 mx-auto mt-1 text-light bg-success">100% jusqu'à xl</div>
+    <div class="container-xxl p-3 mx-auto mt-1 text-light bg-success">100% jusqu'à xxl</div>
+
+    <h2 class="display-6 mb-3 text-center">Nos premières grilles</h2>
+    <!--[row] utilise flexbox d'office
+    <!--col divise l'espace disponible entre les éléments, ici 33% pour chaque colonne-->
+    
+    <div class="container mb-5">
+        <div class="bg-dark row">
+            <div class="col">
+                <p class="p-3 border border-light bg-primary text-light">col 33%</p>
+            </div>
+            <div class="col">
+                <p class="p-3 border border-light bg-primary text-light">col 33%</p>
+            </div class=>
+            <div class="col">
+                <p class="p-3 border border-light bg-primary text-light">col 33%</p>
+            </div>
+            <div class="col">
+                <p class="p-3 border border-light bg-primary text-light">col 33%</p> <!--le row sur parent + col divise automatiquement l'espace disponible en autant de colonnes de argeur égale-->
+            </div>
+        </div>
+    
+    
+        <h2 class="display-6 mb-3 text-center">Définir la taille des colonnes</h2>
+        <div class="row">
+
+            <div class="col-4">
+                <p class="p-3 border border-light bg-primary text-light">Du contenu</p>
+            </div>
+            <div class="col-4">
+                <p class="p-3 border border-light bg-primary text-light">Du contenu</p>
+            </div>
+            <div class="col-4">
+                <p class="p-3 border border-light bg-primary text-light">Du contenu</p>
+            </div>
+        </div>
+
+        <div class="row container">
+
+            <div class="col-4">
+                <img width="330px" src="https://images.unsplash.com/photo-1653162568334-21a6d74c567f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8NnNNVmpUTFNrZVF8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="Lune quartier croissant">
+            </div>
+            <div class="col-4">
+                <img width="330px" src="https://images.unsplash.com/photo-1672356822019-e3a52132dcdd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDY2fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Paysage nocturne étoilé">
+            </div>
+            <div class="col-4">
+                <img width="330px" src="https://images.unsplash.com/photo-1672857663219-0de23c859504?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI1fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Lune nocturne sur la mer">
+            </div>
+        </div>
+
+        <h2 class="display-6 mb-3 text-center">Largeur naturelle</h2>
+
+        <div class="row">
+            <div class="col-3 p-3 border border-light bg-dark text-light">Je prends 3 colonnes</div>
+            <div class="p-3 border border-light bg-dark text-light">Je prends la largeur de mon contenu</div>
+            <div class="col-3 p-3 border border-light bg-dark text-light">Je prends 3 colonnes</div>
+        </div>    
+    </div>
+    
+    <div class="container">
+            <h2 class="display-6 mb-3 text-center">Les breakpoints</h2>
+
+            <div class="col bg-danger col-sm-12 col-md-8 col-lg-6 col-xl-4">
+                <p class="w-100 h-100 p-3 border border-light fw-bold">Mon nombre de colonnes change suivant la largeur d'écran</p>
+
+            </div>
+    
+
+            <h2 class="display-6 mb-3 text-center">Les imbrications</h2>
+            <!-- création de deux colonnes seulement, directement au niveau de la rangée-->
+            
+            <div class="row mb-5">
+                <div class="col-3">
+                    <p class="w-100 h-100 p-3 border border-light bg-dark text-light">Colonne</p>
+                </div>
+            
+                <div class="col-9 p-3 bg-dark">
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="p-3 border border-light my-2 bg-dark text-light">Col imbriquée</p>
+                        </div>
+                        <div class="col-12">
+                            <p class="p-3 border border-light my-2 bg-dark text-light">Col imbriquée</p>
+                        </div>
+                        <div class="col-7">
+                            <p class="p-3 border border-light my-2 bg-dark text-light">Col imbriquée</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <h2 class="display-6 mb-3 text-center">Nombre de colonnes prédéfinies</h2>
+        <!--row-cols-2|2|3|...12 permet(tait) de pédéfinir une largeur de colonne-->
+        <div class="row col-8 mb-5">
+            <p class="col-12 p-3 border border-light bg-primary text-light">Column</p>
+            <p class="col-4 p-3 border border-light bg-primary text-light">Column</p>
+            <p class="p-3 border border-light bg-primary text-light">Column</p>
+            <p class="p-3 border border-light bg-primary text-light">Column</p>
+        </div>
+
+    </div>
+</body>
+</html>

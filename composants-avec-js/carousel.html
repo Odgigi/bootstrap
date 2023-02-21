@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <!-- !Important de ne pas oublier de télécharger le bundle JS (tout en bas du body)-->
+    <!-- [active] doit être ajoutée à au moins une slide(image) pour bien démarrer. -->
+    <!-- Ne pas oublier l'attribut "data-bs-ride" pour initialiser le carousel au chargement de la page -->
+    <!-- Par défault le slider va slider toutes les 3s -->
+    <!-- On peut le changer avec l'attribut data-bs-interval="1000", en millisecondes -->
+    <!-- Quand on entre avec la souris sur le carousel le slider s'arrête-->
+    <!-- data-bs-pause="false" pour ne pas arrêter le slider au mouseenter. -->
+
+    <!-- Structure -->
+    <!-- [carousel slide] sur le parent -->
+    <!-- [carousel-inner] sur le container à slides -->
+    <!-- [carousel-item] sur les slides -->
+    <!-- [d-block w-100] sur les images -->
+
+    <div class="row">
+        <div class="col-12 col-md-8 mx-auto">
+            <div class="carousel-slide" data-bs-interval="1000" id="carouselExempleSlideOnly" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active"> <!-- doit être ajoutée à au moins une image-->
+                        <img src="https://images.unsplash.com/photo-1673032416405-a28fab036f66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE5fGlVSXNuVnRqQjBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Texture de vague striée" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1672239272089-250c32c3e2e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fGlVSXNuVnRqQjBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Texture d'ondes pastels" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1657053543559-5845ec792c0e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIyfGlVSXNuVnRqQjBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Texture de dominos violets" class="d-block w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
